@@ -1,23 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from "react";
+import "./App.css";
+
+import Checkboxes from "./Checkboxes";
+import blogData from "./blogData";
+import IntroSection from "./IntroSection";
+import FilterSection from "./FilterSection";
+import ResourceSection from "./ResourceSection";
 
 function App() {
+  // const [blogList, setBlogList] = useState([{ title: "Anne of Green Gables" }]);
+  const Anne = [{ title: "Anne of Green Gables" }, { title: "Friend Okra" }];
+
+  const [blogList, setBlogList] = useState(Anne);
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <IntroSection />
+      <FilterSection setBlogList={setBlogList} />
+      <ResourceSection blogList={blogList} />
     </div>
   );
 }
