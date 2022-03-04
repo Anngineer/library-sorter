@@ -12,12 +12,17 @@ function App() {
   const Anne = [{ title: "Anne of Green Gables" }, { title: "Friend Okra" }];
 
   const [blogList, setBlogList] = useState(Anne);
+  const [formValue, setFormValue] = useState([]);
 
   return (
     <div className="App">
       <IntroSection />
-      <FilterSection setBlogList={setBlogList} />
-      <ResourceSection blogList={blogList} />
+      <FilterSection
+        setBlogList={setBlogList}
+        setFormValue={setFormValue}
+        formValue={formValue}
+      />
+      <ResourceSection blogList={blogList} formValue={formValue} />
     </div>
   );
 }
