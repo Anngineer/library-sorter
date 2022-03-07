@@ -1,0 +1,16 @@
+.books {
+  border: 2px black solid;
+  display: grid;
+  justify-items: center;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-gap: 1rem;
+}
+.card {
+  border: 2px gray solid;
+  background-color: rgb(53, 63, 71);
+}
+.ui.card,
+.ui.card:last-child,
+.ui.card:first-child {
+  margin: 1rem 0;
+}

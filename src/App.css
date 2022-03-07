@@ -1,11 +1,71 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+}
+
+/* Setting the base properties for the entire page */
+html,
+body {
+  color: #2f3638;
+  font-family: "Source Sans Pro", sans-serif;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  /* box-sizing so that everything will contain its internal elements*/
+  scroll-behavior: smooth;
+  /*This will make it so when you click on a link, 
+        it will scroll to that spot rather than jump*/
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 1rem;
+  background-color: #f5f8f8;
+}
+
 .App {
   text-align: center;
   background-color: #282c34;
   min-height: 100vh;
+  width: 100vw;
   display: flex;
   flex-direction: column;
   align-items: center;
   /* justify-content: center; */
   font-size: calc(10px + 2vmin);
   color: white;
+}
+.Intro-section,
+.FilterSection,
+.ResourceSection {
+  width: 100%;
+}
+
+.FilterSection {
+  padding: 1rem;
+}
+.form {
+  border: #1d55c5 solid 2px;
+}
+
+.BlogCards {
+  border: 2px black solid;
+  display: grid;
+  justify-items: center;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-gap: 1rem;
+}
+.card {
+  border: 2px gray solid;
+  background-color: rgb(53, 63, 71);
+  min-width: 316px;
+}
+.ui.card,
+.ui.card:last-child,
+.ui.card:first-child {
+  margin: 1rem 0;
 }

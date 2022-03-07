@@ -2,8 +2,9 @@ import React from "react";
 
 function IntroSection() {
   return (
-    <div>
+    <div className="IntroSection">
       <h1>Book Blog Posts</h1>
+      <hr />
     </div>
   );
 }
