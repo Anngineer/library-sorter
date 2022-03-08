@@ -73,6 +73,7 @@ function SearchForm(props) {
       <Form className="form">
         {tagList.map((tag) => (
           <Checkbox
+            key={tag}
             className="checkbox"
             label={tag}
             onChange={(e, v) => handleCheckBoxChange(e, v, tag)}

@@ -1,8 +1,6 @@
 import React, { useState } from "react";
 import "./App.css";
 
-import Checkboxes from "./Checkboxes";
-import blogData from "./blogData";
 import IntroSection from "./IntroSection";
 import FilterSection from "./FilterSection";
 import ResourceSection from "./ResourceSection";
