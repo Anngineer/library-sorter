@@ -13,8 +13,6 @@ export default function createTags() {
       }
     }
   }
-  // console.log("Blog List of Tags");
 
-  // console.log(tagList);
   return tagList;
 }

@@ -52,14 +52,16 @@ body {
   border: #657275 solid 2px;
 }
 
-.BlogCards {
-  border: 2px black solid;
+.BlogCards,
+.ThemeCards {
+  /* border: 2px black solid; */
   display: grid;
   justify-items: center;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   grid-gap: 1rem;
 }
-.card {
+.card,
+.themeCard {
   border: 2px gray solid;
   background-color: rgb(53, 63, 71);
   min-width: 316px;
@@ -68,4 +70,16 @@ body {
 .ui.card:last-child,
 .ui.card:first-child {
   margin: 1rem 0;
+}
+
+/* Component ThemeCards has themeCard elements */
+@media (max-width: 1300px) {
+  .ThemeCards .ui.card:last-child {
+    display: none;
+  }
+}
+@media (max-width: 930px) {
+  .ThemeCards .ui.card:nth-child(3) {
+    display: none;
+  }
 }

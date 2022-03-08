@@ -20,7 +20,9 @@ function App() {
     },
   ];
 
-  const [blogList, setBlogList] = useState(thisWeek);
+  // const [blogList, setBlogList] = useState(thisWeek);
+  const [blogList, setBlogList] = useState([]);
+
   const [formValue, setFormValue] = useState([]);
 
   return (
