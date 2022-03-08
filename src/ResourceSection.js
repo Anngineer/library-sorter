@@ -25,8 +25,8 @@ function ResourceSection(props) {
     return (
       <div className="ResourceSection">
         <h3>Resource Section</h3>
-        <p>The topics checked are {formValue.join(", ")}</p>
-        <p> The titles are: {allTitles}</p>
+        <p>The topics checked: {formValue.join(", ")}</p>
+        <p> The titles shown: {allTitles}</p>
         {/* <ResourceList blogList={blogList} formValue={formValue} /> */}
         <hr />
         <BlogCards blogList={blogList} />
