@@ -24,7 +24,7 @@ function ThemeCards(props) {
       {/* <h5>Group of cards with theme {theme}.</h5> */}
 
       {fourThemeList.map((book) => (
-        <Card className="themeCard" key={book.key}>
+        <Card className="themeCard" key={book.key} href={book.href}>
           <Card.Content>
             <Card.Header className="bookHeader">{book.title}</Card.Header>
           </Card.Content>

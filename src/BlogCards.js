@@ -9,7 +9,7 @@ function BlogCards(props) {
   return (
     <div className="BlogCards">
       {blogList.map((book) => (
-        <Card className="card" key={book.key}>
+        <Card className="card" key={book.key} href={book.href}>
           <Card.Content>
             <Card.Header className="bookHeader">{book.title}</Card.Header>
           </Card.Content>
