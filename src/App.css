@@ -39,12 +39,24 @@ body {
   font-size: calc(10px + 2vmin);
   color: white;
 }
-.Intro-section,
+.IntroSection,
 .FilterSection,
 .ResourceSection {
   width: 100%;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
 }
 
+.Dropdown {
+  margin-bottom: 2rem;
+}
+.formGroup .field {
+  display: inline;
+}
+.formGroup .input {
+  padding-right: 1rem;
+  /* padding-left: 1rem; */
+}
 .FilterSection {
   padding: 1rem;
 }
